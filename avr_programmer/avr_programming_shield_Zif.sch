@@ -4355,7 +4355,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="0" y1="185.42" x2="0" y2="157.48" width="0.1524" layer="94"/>
 <wire x1="71.12" y1="185.42" x2="0" y2="185.42" width="0.1524" layer="94"/>
 <text x="147.32" y="33.02" size="2.54" layer="94">AVR Programming Shield</text>
-<text x="147.32" y="27.94" size="2.54" layer="94">http://www.ladyada.net/make/mshield</text>
+<text x="147.32" y="27.94" size="2.54" layer="94">http://</text>
+<text x="147.32" y="165.1" size="1.778" layer="91">Red
+Brown
+Black</text>
+<text x="111.76" y="165.1" size="1.778" layer="91">Orange
+Yellow
+Green</text>
 </plain>
 <instances>
 <instance part="RESET" gate="1" x="30.48" y="83.82" rot="MR180"/>
@@ -4418,8 +4424,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="38.1" y1="91.44" x2="40.64" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="91.44" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="91.44" x2="99.06" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="154.94" x2="147.32" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="154.94" x2="147.32" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="154.94" x2="157.48" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="154.94" x2="157.48" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="165.1" x2="147.32" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="ISP" gate="G$1" pin="GND"/>
 </segment>
 <segment>
@@ -4460,9 +4467,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="U$1" gate="G$1" pin="5V"/>
 <wire x1="35.56" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="ISP" gate="G$1" pin="VCC"/>
-<wire x1="147.32" y1="170.18" x2="152.4" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="170.18" x2="152.4" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="152.4" x2="101.6" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="170.18" x2="160.02" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="170.18" x2="160.02" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="152.4" x2="101.6" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="152.4" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -4494,10 +4501,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <pinref part="U$1" gate="G$1" pin="D11"/>
 <wire x1="27.94" y1="154.94" x2="27.94" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="175.26" x2="149.86" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="175.26" x2="149.86" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="175.26" x2="162.56" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="175.26" x2="162.56" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="ISP" gate="G$1" pin="MOSI"/>
-<wire x1="149.86" y1="167.64" x2="147.32" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="167.64" x2="147.32" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -4577,13 +4584,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="213.36" y1="60.96" x2="213.36" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="104.14" x2="203.2" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="P$22"/>
-<wire x1="121.92" y1="106.68" x2="119.38" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="106.68" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="106.68" x2="114.3" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="88.9" x2="165.1" y2="88.9" width="0.1524" layer="91"/>
 <junction x="165.1" y="88.9"/>
 <pinref part="ISP_84" gate="G$1" pin="MISO"/>
-<junction x="119.38" y="106.68"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -4598,7 +4603,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="ISP_84" gate="G$1" pin="VCC"/>
 <wire x1="147.32" y1="106.68" x2="160.02" y2="106.68" width="0.1524" layer="91"/>
 <junction x="160.02" y="106.68"/>
-<wire x1="121.92" y1="124.46" x2="119.38" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="124.46" x2="119.38" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="116.84" x2="147.32" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="116.84" x2="147.32" y2="121.92" width="0.1524" layer="91"/>
@@ -4606,7 +4610,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <junction x="160.02" y="121.92"/>
 <pinref part="U$2" gate="G$1" pin="P$1"/>
 <pinref part="ISP_85" gate="G$1" pin="RST"/>
-<junction x="119.38" y="124.46"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -4624,7 +4627,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="N$16" class="0">
 <segment>
-<wire x1="144.78" y1="101.6" x2="147.32" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="101.6" x2="157.48" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="101.6" x2="157.48" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="129.54" x2="157.48" y2="142.24" width="0.1524" layer="91"/>
@@ -4632,13 +4634,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="208.28" y1="142.24" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="P$28"/>
 <wire x1="208.28" y1="134.62" x2="203.2" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="129.54" x2="147.32" y2="129.54" width="0.1524" layer="91"/>
 <junction x="157.48" y="129.54"/>
 <pinref part="ISP_84" gate="G$1" pin="GND"/>
-<junction x="147.32" y="101.6"/>
 <pinref part="ISP_85" gate="G$1" pin="VCC"/>
 <wire x1="147.32" y1="129.54" x2="157.48" y2="129.54" width="0.1524" layer="91"/>
-<junction x="147.32" y="129.54"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -4649,6 +4648,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="154.94" y1="93.98" x2="154.94" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="119.38" x2="170.18" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="P$4"/>
+<pinref part="ISP_85" gate="G$1" pin="GND"/>
+<wire x1="147.32" y1="124.46" x2="154.94" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="124.46" x2="154.94" y2="119.38" width="0.1524" layer="91"/>
+<junction x="154.94" y="119.38"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -4681,13 +4684,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="215.9" y1="149.86" x2="215.9" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="129.54" x2="203.2" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="P$27"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="ISP_85" gate="G$1" pin="GND"/>
-<pinref part="U$2" gate="G$1" pin="P$3"/>
-<wire x1="147.32" y1="124.46" x2="170.18" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -4751,4 +4747,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
