@@ -1,0 +1,16 @@
+BOM for Avr_programming_shield
+
+
+1 x 28-pin DIP ZIF socket $2.25ea(Adafruit or EMSL 9220005)
+4 x 6-pin DIL header $0.70ea(EMSL 9200005)
+1 x 6-pin DIL ribbon cable $2.50 (EMSL) 3" or $2.95 12"
+
+3mm leds
+resistors
+  100
+  1k
+  10k
+caps
+16-Mhz crystal
+straight header
+tactile button
