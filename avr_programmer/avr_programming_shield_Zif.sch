@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5061,6 +5061,7 @@ Green</text>
 <wire x1="157.48" y1="154.94" x2="157.48" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="165.1" x2="147.32" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="ISP" gate="G$1" pin="GND"/>
+<junction x="40.64" y="91.44"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -5094,12 +5095,6 @@ Green</text>
 <pinref part="C1" gate="G$1" pin="-"/>
 <wire x1="43.18" y1="81.28" x2="30.48" y2="81.28" width="0.1524" layer="91"/>
 <junction x="30.48" y="81.28"/>
-</segment>
-</net>
-<net name="VIN" class="0">
-<segment>
-<wire x1="43.18" y1="93.98" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VIN"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -5213,6 +5208,7 @@ Green</text>
 <wire x1="162.56" y1="114.3" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="104.14" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
 <junction x="170.18" y="104.14"/>
+<junction x="162.56" y="104.14"/>
 </segment>
 </net>
 <net name="N$13" class="0">
