@@ -1,16 +1,28 @@
 BOM for Avr_programming_shield
 
+1 x 28-pin DIP ZIF socket 
+    EMSL 9220005 $2.25ea
+    Adafruit  
 
-1 x 28-pin DIP ZIF socket $2.25ea(Adafruit or EMSL 9220005)
-4 x 6-pin DIL header $0.70ea(EMSL 9200005)
 1 x 6-pin DIL ribbon cable $2.50 (EMSL) 3" or $2.95 12"
+ - or -
+2 x Ribbon Crimp Connector - 6-pin (2x3, Female) 
+    Sparkfun PRT-10651 $0.35ea
+    Digikey 609-3567-ND $1.74
+    Digikey 609-3067-ND $0.92
 
-3mm leds
-resistors
-  100
-  1k
-  10k
-caps
-16-Mhz crystal
-straight header
-tactile button
+4 x 2x3 male header (or use straight header)
+    EMSL 9200005 $0.70
+    Digikey 609-3218-ND $0.26
+    Digikey 609-2845-ND (shrouded) $0.74
+
+3 x 3mm leds (Green, Yellow, Red)
+3 x 330-ohm resistors
+1 x 10 uF cap
+1 x 16-Mhz resonator
+1 x straight header
+1 x tactile button
+
+Optional (for mega):
+1 x 2x2 female header (or use straight header)
+    Digikey A26452-ND $1.25
