@@ -4807,7 +4807,6 @@ Based on the following sources:&lt;p&gt;
 <text x="147.32" y="33.02" size="2.54" layer="94">AVR Programming Shield</text>
 <text x="147.32" y="27.94" size="2.54" layer="94">http://www.ladyada.net/make/mshield</text>
 <text x="30.48" y="25.4" size="1.778" layer="91">Dave O was here - testing git</text>
-<text x="30.48" y="20.32" size="1.778" layer="91">Dave O was here - testing git</text>
 </plain>
 <instances>
 <instance part="RESET" gate="1" x="-45.72" y="83.82" rot="MR180"/>
