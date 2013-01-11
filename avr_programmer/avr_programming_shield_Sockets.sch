@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4806,6 +4806,7 @@ Based on the following sources:&lt;p&gt;
 <wire x1="71.12" y1="185.42" x2="0" y2="185.42" width="0.1524" layer="94"/>
 <text x="147.32" y="33.02" size="2.54" layer="94">AVR Programming Shield</text>
 <text x="147.32" y="27.94" size="2.54" layer="94">http://www.ladyada.net/make/mshield</text>
+<text x="30.48" y="25.4" size="1.778" layer="91">Dave O was here - testing git</text>
 </plain>
 <instances>
 <instance part="RESET" gate="1" x="-45.72" y="83.82" rot="MR180"/>
