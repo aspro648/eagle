@@ -2,7 +2,8 @@ BOM for Avr_programming_shield
 
 1 x 28-pin DIP ZIF socket 
     EMSL 9220005 $2.25ea
-    Adafruit  
+    Adafruit 382 $3.00
+	Sparkfun ZIF PRT-09175 $2.95  
 
 1 x 6-pin DIL ribbon cable $2.50 (EMSL) 3" or $2.95 12"
  - or -
@@ -13,8 +14,9 @@ BOM for Avr_programming_shield
 
 4 x 2x3 male header (or use straight header)
     EMSL 9200005 $0.70
+	Sparkfun PRT-10877 $1.50 (shrouded)
     Digikey 609-3218-ND $0.26
-    Digikey 609-2845-ND (shrouded) $0.74
+    Digikey 609-2845-ND $0.74 (shrouded) 
 
 3 x 3mm leds (Green, Yellow, Red)
 3 x 330-ohm resistors
@@ -26,3 +28,9 @@ BOM for Avr_programming_shield
 Optional (for mega):
 1 x 2x2 female header (or use straight header)
     Digikey A26452-ND $1.25
+
+Optional (for optiboot):
+1 x Piezo Buzzer 
+	PS1240 Adafruit 160 $1.50 
+
+
