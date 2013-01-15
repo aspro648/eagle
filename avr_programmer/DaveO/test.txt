@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 jkljTest New File
+=======
+Hi Test New File
+>>>>>>> 29bb19fb22bcfaccf81b7c10a36ebc95458432ab
