@@ -7,6 +7,7 @@
 # 01/10/2013 - Dave O - added this to stop CR/LF normalization for Eagle files
 *.brd
 *.sch
+*.svg
 
 # Custom for Visual Studio
 *.cs     diff=csharp
