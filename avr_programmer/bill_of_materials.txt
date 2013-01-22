@@ -19,11 +19,11 @@ BOM for Avr_programming_shield
     Digikey 609-2845-ND $0.74 (shrouded) 
 
 3 x 3mm leds (Green, Yellow, Red)
-3 x 330-ohm resistors
-1 x 10 uF cap
-1 x 16-Mhz resonator
-1 x straight header
-1 x tactile button
+3 x 330-ohm resistors (Digikey 330QBK-ND)
+1 x 10 uF cap (Digikey P975-ND)
+1 x 16-Mhz resonator (Digikey X908-ND)
+1 x straight header (Digikey A26509-40-ND)
+1 x tactile button (Digikey SW402-ND $0.42)
 
 Optional (for mega):
 1 x 2x2 female header (or use straight header)
