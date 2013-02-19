@@ -1,0 +1,23 @@
+OSI BOM
+
+Brain:
+
+ATTINY84A-PU-ND, Attiny 84, $1.38
+A100205-ND, 14-pin socket, $0.22
+103K-ND, battery holder, $1.60
+EG1847-ND, right angle switch, $0.73 
+SW402-ND, tactile button, $0.42
+S4008-ND, 8 pin female header, $0.53
+S7004-ND, 6 pin female header, $0.67
+A26593-ND, 2 x 3 right angle, $1.73
+
+
+IO:
+LEDS,
+PDV-P8103-ND, CdS cell, $0.80
+SW402-ND, tactile button, $0.42
+609-3505-ND, straight header 36 pos, $0.73
+3 x 100 ohm resistors
+2 x 10k ohm resistors
+445-2525-1-ND, Piezo Buzzer, $0.73 (PS1240 Adafruit $1.50) 
+
