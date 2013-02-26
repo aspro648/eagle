@@ -4379,54 +4379,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="P$3" x="2.54" y="5.08" drill="1.1" diameter="1.9"/>
 <pad name="2" x="2.54" y="0" drill="1.1" diameter="1.9"/>
 </package>
-<package name="DIL28-3-ZIF_SOCKET">
-<wire x1="-17.78" y1="-1.27" x2="-17.78" y2="-3.048" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="-1.27" x2="-17.78" y2="1.27" width="0.2032" layer="21" curve="180"/>
-<wire x1="17.78" y1="-3.048" x2="17.78" y2="3.048" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="3.048" x2="-17.78" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="3.048" x2="-17.526" y2="3.048" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="-3.048" x2="-17.526" y2="-3.048" width="0.2032" layer="21"/>
-<wire x1="17.78" y1="-3.048" x2="17.526" y2="-3.048" width="0.2032" layer="21"/>
-<wire x1="17.78" y1="3.048" x2="17.526" y2="3.048" width="0.2032" layer="21"/>
-<wire x1="-26.111" y1="-8" x2="25.889" y2="-8" width="0.127" layer="51"/>
-<wire x1="25.889" y1="-8" x2="25.889" y2="8" width="0.127" layer="51"/>
-<wire x1="25.889" y1="8" x2="-26.111" y2="8" width="0.127" layer="51"/>
-<wire x1="-26.111" y1="8" x2="-26.111" y2="-8" width="0.127" layer="51"/>
-<wire x1="-21.59" y1="-5.08" x2="-36.83" y2="-5.08" width="0.254" layer="51" style="shortdash"/>
-<wire x1="-36.83" y1="-5.08" x2="-36.83" y2="-7.62" width="0.254" layer="51" style="shortdash"/>
-<wire x1="-36.83" y1="-7.62" x2="-21.59" y2="-7.62" width="0.254" layer="51" style="shortdash"/>
-<wire x1="-21.59" y1="-7.62" x2="-21.59" y2="-5.08" width="0.254" layer="51" style="shortdash"/>
-<pad name="1" x="-16.51" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="-13.97" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="-11.43" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="-8.89" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="5" x="-6.35" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="6" x="-3.81" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="7" x="-1.27" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="8" x="1.27" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="9" x="3.81" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="10" x="6.35" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="11" x="8.89" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="12" x="11.43" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="13" x="13.97" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="14" x="16.51" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="15" x="16.51" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="16" x="13.97" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="17" x="11.43" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="18" x="8.89" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="19" x="6.35" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="20" x="3.81" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="21" x="1.27" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="22" x="-1.27" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="23" x="-3.81" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="24" x="-6.35" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="25" x="-8.89" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="26" x="-11.43" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="27" x="-13.97" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="28" x="-16.51" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-15.24" y="0" size="0.6096" layer="25" ratio="10">&gt;NAME</text>
-<text x="-15.24" y="-1.27" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="CAP_POL">
@@ -4452,43 +4404,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 <pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-<symbol name="DIL-28-3">
-<wire x1="0" y1="0" x2="22.86" y2="0" width="0.254" layer="94"/>
-<wire x1="22.86" y1="0" x2="22.86" y2="76.2" width="0.254" layer="94"/>
-<wire x1="22.86" y1="76.2" x2="15.24" y2="76.2" width="0.254" layer="94"/>
-<wire x1="15.24" y1="76.2" x2="7.62" y2="76.2" width="0.254" layer="94"/>
-<wire x1="7.62" y1="76.2" x2="0" y2="76.2" width="0.254" layer="94"/>
-<wire x1="0" y1="76.2" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="15.24" y1="76.2" x2="7.62" y2="76.2" width="0.254" layer="94" curve="-180"/>
-<pin name="P$1" x="-5.08" y="71.12" length="middle"/>
-<pin name="P$2" x="-5.08" y="66.04" length="middle"/>
-<pin name="P$3" x="-5.08" y="60.96" length="middle"/>
-<pin name="P$4" x="-5.08" y="55.88" length="middle"/>
-<pin name="P$5" x="-5.08" y="50.8" length="middle"/>
-<pin name="P$6" x="-5.08" y="45.72" length="middle"/>
-<pin name="P$7" x="-5.08" y="40.64" length="middle"/>
-<pin name="P$8" x="-5.08" y="35.56" length="middle"/>
-<pin name="P$9" x="-5.08" y="30.48" length="middle"/>
-<pin name="P$10" x="-5.08" y="25.4" length="middle"/>
-<pin name="P$11" x="-5.08" y="20.32" length="middle"/>
-<pin name="P$12" x="-5.08" y="15.24" length="middle"/>
-<pin name="P$13" x="-5.08" y="10.16" length="middle"/>
-<pin name="P$14" x="-5.08" y="5.08" length="middle"/>
-<pin name="P$15" x="27.94" y="5.08" length="middle" rot="R180"/>
-<pin name="P$16" x="27.94" y="10.16" length="middle" rot="R180"/>
-<pin name="P$17" x="27.94" y="15.24" length="middle" rot="R180"/>
-<pin name="P$18" x="27.94" y="20.32" length="middle" rot="R180"/>
-<pin name="P$19" x="27.94" y="25.4" length="middle" rot="R180"/>
-<pin name="P$20" x="27.94" y="30.48" length="middle" rot="R180"/>
-<pin name="P$21" x="27.94" y="35.56" length="middle" rot="R180"/>
-<pin name="P$22" x="27.94" y="40.64" length="middle" rot="R180"/>
-<pin name="P$23" x="27.94" y="45.72" length="middle" rot="R180"/>
-<pin name="P$24" x="27.94" y="50.8" length="middle" rot="R180"/>
-<pin name="P$25" x="27.94" y="55.88" length="middle" rot="R180"/>
-<pin name="P$26" x="27.94" y="60.96" length="middle" rot="R180"/>
-<pin name="P$27" x="27.94" y="66.04" length="middle" rot="R180"/>
-<pin name="P$28" x="27.94" y="71.12" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4854,48 +4769,6 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ZIFSOCKET-28-3">
-<gates>
-<gate name="G$1" symbol="DIL-28-3" x="-10.16" y="-38.1"/>
-</gates>
-<devices>
-<device name="ZIFFSOCKET-28-3" package="DIL28-3-ZIF_SOCKET">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$10" pad="10"/>
-<connect gate="G$1" pin="P$11" pad="11"/>
-<connect gate="G$1" pin="P$12" pad="12"/>
-<connect gate="G$1" pin="P$13" pad="13"/>
-<connect gate="G$1" pin="P$14" pad="14"/>
-<connect gate="G$1" pin="P$15" pad="15"/>
-<connect gate="G$1" pin="P$16" pad="16"/>
-<connect gate="G$1" pin="P$17" pad="17"/>
-<connect gate="G$1" pin="P$18" pad="18"/>
-<connect gate="G$1" pin="P$19" pad="19"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-<connect gate="G$1" pin="P$20" pad="20"/>
-<connect gate="G$1" pin="P$21" pad="21"/>
-<connect gate="G$1" pin="P$22" pad="22"/>
-<connect gate="G$1" pin="P$23" pad="23"/>
-<connect gate="G$1" pin="P$24" pad="24"/>
-<connect gate="G$1" pin="P$25" pad="25"/>
-<connect gate="G$1" pin="P$26" pad="26"/>
-<connect gate="G$1" pin="P$27" pad="27"/>
-<connect gate="G$1" pin="P$28" pad="28"/>
-<connect gate="G$1" pin="P$3" pad="3"/>
-<connect gate="G$1" pin="P$4" pad="4"/>
-<connect gate="G$1" pin="P$5" pad="5"/>
-<connect gate="G$1" pin="P$6" pad="6"/>
-<connect gate="G$1" pin="P$7" pad="7"/>
-<connect gate="G$1" pin="P$8" pad="8"/>
-<connect gate="G$1" pin="P$9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5987,7 +5860,6 @@ http://www.ladyada.net/library/pcb/eaglelibrary.html</description>
 <attribute name="MPN" value=""/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
-<part name="U$3" library="SparkFun" deviceset="ZIFSOCKET-28-3" device="ZIFFSOCKET-28-3"/>
 <part name="U$5" library="adafruit_mod" deviceset="ARDUINO" device="-NOHOLE"/>
 </parts>
 <sheets>
@@ -6115,7 +5987,6 @@ Dave Orth</text>
 <attribute name="MF" x="60.96" y="71.12" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="60.96" y="71.12" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$3" gate="G$1" x="71.12" y="7.62"/>
 <instance part="U$5" gate="G$1" x="27.94" y="127"/>
 </instances>
 <busses>

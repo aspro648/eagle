@@ -66,14 +66,25 @@
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
 <layer number="108" name="centerline" color="7" fill="1" visible="no" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="prix" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="test" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
@@ -99,6 +110,8 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
@@ -1575,6 +1588,162 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
+<library name="adafruit_mod">
+<packages>
+<package name="FPC_0.5MM-4">
+<wire x1="-2.45" y1="-1.15" x2="2.75" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="2.75" y1="-1.15" x2="3.25" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="3.25" y1="-1.65" x2="3.25" y2="-5.65" width="0.127" layer="21"/>
+<wire x1="3.25" y1="-5.65" x2="-3" y2="-5.65" width="0.127" layer="21"/>
+<wire x1="-3" y1="-5.65" x2="-3" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-4.5" x2="-3" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.7" x2="-2.45" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="-3" y1="-4.5" x2="-1.55" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-1.55" y1="-4.5" x2="-1.55" y2="-5.6" width="0.127" layer="21"/>
+<wire x1="3.2" y1="-4.5" x2="1.85" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="1.85" y1="-4.5" x2="1.85" y2="-5.6" width="0.127" layer="21"/>
+<smd name="1" x="-0.75" y="-0.45" dx="1.25" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-0.25" y="-0.45" dx="1.25" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="0.25" y="-0.45" dx="1.25" dy="0.3" layer="1" rot="R90"/>
+<smd name="4" x="0.75" y="-0.45" dx="1.25" dy="0.3" layer="1" rot="R90"/>
+<smd name="MT2" x="2.7" y="-2.1" dx="2.6" dy="1.85" layer="1" rot="R90"/>
+<smd name="MT" x="-2.7" y="-2.1" dx="2.6" dy="1.85" layer="1" rot="R90"/>
+<text x="-2.5" y="-7.35" size="1.27" layer="25" font="vector">&gt;NAME</text>
+</package>
+<package name="1X04-BIG">
+<wire x1="6.985" y1="1.27" x2="8.255" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="1.27" x2="8.89" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="-0.635" x2="8.255" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="-1.27" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="0.635" x2="8.89" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.778" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.778" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.778" rot="R90"/>
+<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.778" rot="R90"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="1X04-CLEANBIG">
+<pad name="1" x="-3.81" y="0" drill="1.016" diameter="1.778" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1.016" diameter="1.778" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1.016" diameter="1.778" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1.016" diameter="1.778" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+</package>
+<package name="1X04-3.5MM">
+<wire x1="-7" y1="3.4" x2="-7" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-7" y1="-2.5" x2="-7" y2="-3.6" width="0.127" layer="21"/>
+<wire x1="-7" y1="-3.6" x2="7" y2="-3.6" width="0.127" layer="21"/>
+<wire x1="7" y1="-3.6" x2="7" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="7" y1="-2.5" x2="7" y2="3.4" width="0.127" layer="21"/>
+<wire x1="7" y1="3.4" x2="-7" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-7" y1="-2.5" x2="7" y2="-2.5" width="0.127" layer="21"/>
+<pad name="4" x="5.25" y="0" drill="1" diameter="2.1844"/>
+<pad name="3" x="1.75" y="0" drill="1" diameter="2.1844"/>
+<pad name="2" x="-1.75" y="0" drill="1" diameter="2.1844"/>
+<pad name="1" x="-5.25" y="0" drill="1" diameter="2.1844"/>
+<text x="6.12" y="-5.81" size="1.27" layer="25" rot="R180">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="1X4">
+<wire x1="0" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="0" y2="5.08" width="0.254" layer="94"/>
+<text x="5.08" y="7.62" size="1.27" layer="95" font="vector" rot="R180">&gt;NAME</text>
+<text x="0" y="-10.16" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="2.54" length="middle"/>
+<pin name="2" x="-5.08" y="0" length="middle"/>
+<pin name="3" x="-5.08" y="-2.54" length="middle"/>
+<pin name="4" x="-5.08" y="-5.08" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1X4" prefix="CN">
+<description>4-pin connector</description>
+<gates>
+<gate name="G$1" symbol="1X4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="FPC0.5" package="FPC_0.5MM-4">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-BIG" package="1X04-BIG">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-CLEANBIG" package="1X04-CLEANBIG">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-3.5MM" package="1X04-3.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1591,6 +1760,8 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="JP2" library="SparkFun_mod" deviceset="M08" device="1X08"/>
 <part name="P+1" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
+<part name="CN1" library="adafruit_mod" deviceset="1X4" device="-CLEANBIG"/>
+<part name="CN2" library="adafruit_mod" deviceset="1X4" device="-CLEANBIG"/>
 </parts>
 <sheets>
 <sheet>
@@ -1611,8 +1782,10 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="VALUE" x="129.54" y="55.88" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="130.302" y="35.56" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="P+1" gate="1" x="48.26" y="71.12" rot="R90"/>
-<instance part="GND1" gate="1" x="45.72" y="66.04" rot="R270"/>
+<instance part="P+1" gate="1" x="106.68" y="86.36" rot="R90"/>
+<instance part="GND1" gate="1" x="104.14" y="83.82" rot="R270"/>
+<instance part="CN1" gate="G$1" x="124.46" y="83.82"/>
+<instance part="CN2" gate="G$1" x="137.16" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -1623,12 +1796,28 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="66.04" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="CN1" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="CN2" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="83.82" x2="132.08" y2="83.82" width="0.1524" layer="91"/>
+<junction x="119.38" y="83.82"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="P+4" gate="1" pin="VCC"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="68.58" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+1" gate="1" pin="VCC"/>
+<pinref part="CN1" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="86.36" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="CN2" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="86.36" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
+<junction x="119.38" y="86.36"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -1652,11 +1841,17 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="116.84" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D4" class="0">
+<net name="SDA" class="0">
 <segment>
-<wire x1="119.38" y1="43.18" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="4"/>
 <label x="116.84" y="43.18" size="1.778" layer="95"/>
+<wire x1="119.38" y1="43.18" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="43.18" x2="104.14" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="CN1" gate="G$1" pin="3"/>
+<wire x1="104.14" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="CN2" gate="G$1" pin="3"/>
+<wire x1="132.08" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
+<junction x="119.38" y="81.28"/>
 </segment>
 </net>
 <net name="D3" class="0">
@@ -1708,11 +1903,17 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="116.84" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D6" class="0">
+<net name="SCK" class="0">
 <segment>
 <pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="48.26" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
 <label x="116.84" y="48.26" size="1.778" layer="95"/>
+<wire x1="119.38" y1="48.26" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="48.26" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="CN1" gate="G$1" pin="4"/>
+<wire x1="106.68" y1="78.74" x2="119.38" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="CN2" gate="G$1" pin="4"/>
+<wire x1="132.08" y1="78.74" x2="119.38" y2="78.74" width="0.1524" layer="91"/>
+<junction x="119.38" y="78.74"/>
 </segment>
 </net>
 </nets>
