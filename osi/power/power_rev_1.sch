@@ -6233,65 +6233,70 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <segment>
 <wire x1="119.38" y1="40.64" x2="114.3" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="G$1" pin="5"/>
+<label x="114.3" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D2" class="0">
 <segment>
 <wire x1="119.38" y1="38.1" x2="114.3" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="G$1" pin="6"/>
+<label x="114.3" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D1" class="0">
 <segment>
 <wire x1="119.38" y1="35.56" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="G$1" pin="7"/>
+<label x="114.3" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AREF_D0" class="0">
 <segment>
 <wire x1="119.38" y1="33.02" x2="114.3" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="G$1" pin="8"/>
+<label x="105.918" y="33.274" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA_D6" class="0">
 <segment>
 <wire x1="114.3" y1="48.26" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="G$1" pin="2"/>
+<label x="107.696" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D5" class="0">
 <segment>
 <wire x1="114.3" y1="45.72" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="G$1" pin="3"/>
+<label x="114.3" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL_D4" class="0">
 <segment>
 <wire x1="114.3" y1="43.18" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="G$1" pin="4"/>
-</segment>
-</net>
-<net name="D8" class="0">
-<segment>
-<wire x1="114.3" y1="60.96" x2="119.38" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="JP5" gate="G$1" pin="5"/>
+<label x="107.95" y="43.434" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D9" class="0">
 <segment>
-<wire x1="114.3" y1="58.42" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="JP5" gate="G$1" pin="6"/>
+<wire x1="114.3" y1="60.96" x2="119.38" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="G$1" pin="5"/>
+<label x="114.3" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D10" class="0">
 <segment>
-<wire x1="114.3" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="58.42" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="G$1" pin="6"/>
+<label x="114.3" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D7" class="0">
 <segment>
 <wire x1="114.3" y1="50.8" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="G$1" pin="1"/>
+<label x="114.3" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
