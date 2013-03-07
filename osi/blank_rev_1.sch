@@ -4340,7 +4340,7 @@ type 0309, grid 2.5 mm</description>
 <label x="175.895" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D9" class="0">
+<net name="D8" class="0">
 <segment>
 <wire x1="160.655" y1="86.36" x2="191.135" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="G$1" pin="5"/>

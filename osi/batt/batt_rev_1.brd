@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -127,7 +127,7 @@
 <wire x1="3.81" y1="25.4" x2="0.000159375" y2="21.590159375" width="0" layer="20"/>
 <wire x1="0.000159375" y1="21.590159375" x2="0" y2="21.590159375" width="0" layer="20"/>
 <wire x1="0" y1="21.590159375" x2="0" y2="0" width="0" layer="20"/>
-<text x="0.70358125" y="2.7432" size="0.8128" layer="21" font="vector" ratio="15">V+ GND 5V 3V D9 D10</text>
+<text x="0.70358125" y="2.7432" size="0.8128" layer="21" font="vector" ratio="15">V+ GND 5V 3V D8 D10</text>
 <text x="5.750559375" y="21.72461875" size="0.9144" layer="21" font="vector" ratio="15">D7 D6 D5 D4 D3 D2 D1 D0</text>
 <text x="24.765" y="20.574" size="1.27" layer="21" font="vector" ratio="20" rot="R180">BATT</text>
 <text x="11.049" y="4.572" size="0.8128" layer="22" font="vector" ratio="15" rot="MR90">MakersBox.blogspot.com</text>
@@ -136,7 +136,7 @@
 Rev 1
 Feb 12</text>
 <text x="24.800559375" y="21.72461875" size="0.9144" layer="22" font="vector" ratio="15" rot="MR0">D0 D1 D2 D3 D4 D5 D6 D7</text>
-<text x="14.67358125" y="2.7432" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0">D10 D9 3V 5V GND V+</text>
+<text x="14.67358125" y="2.7432" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0">D10 D8 3V 5V GND V+</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -494,7 +494,7 @@ design rules under a new name.</description>
 <element name="JP6" library="SparkFun" package="1X06" value="6" x="1.27" y="1.27"/>
 <element name="JP8" library="SparkFun" package="1X08" value="8" x="6.35" y="24.13"/>
 <element name="BAT3" library="SparkFun_mod" package="BATTCOM_20MM_PTH" value="" x="1.905" y="12.7"/>
-<element name="U$1" library="_my-parts" package="SWITCH" value="SWITCH" x="23.495" y="4.445" rot="R90"/>
+<element name="U$1" library="_my-parts" package="SWITCH" value="SWITCH" x="23.495" y="3.81" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -514,9 +514,9 @@ design rules under a new name.</description>
 <contactref element="JP6" pad="2"/>
 <contactref element="U$1" pad="2"/>
 <contactref element="U$1" pad="5"/>
-<wire x1="24.257" y1="4.445" x2="20.955" y2="4.445" width="0.6096" layer="16"/>
-<wire x1="20.955" y1="4.445" x2="5.08" y2="4.445" width="0.6096" layer="16"/>
-<wire x1="5.08" y1="4.445" x2="3.81" y2="3.175" width="0.6096" layer="16"/>
+<wire x1="24.257" y1="3.81" x2="20.955" y2="3.81" width="0.6096" layer="16"/>
+<wire x1="20.955" y1="3.81" x2="5.08" y2="3.81" width="0.6096" layer="16"/>
+<wire x1="5.08" y1="3.81" x2="3.81" y2="3.175" width="0.6096" layer="16"/>
 <wire x1="3.81" y1="3.175" x2="3.81" y2="1.27" width="0.6096" layer="16"/>
 </signal>
 <signal name="SDA_D6">
@@ -566,9 +566,9 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="6"/>
 <contactref element="BAT3" pad="2"/>
 <contactref element="U$1" pad="3"/>
-<wire x1="24.257" y1="6.985" x2="20.955" y2="6.985" width="0.6096" layer="16"/>
-<wire x1="20.955" y1="6.985" x2="7.62" y2="6.985" width="0.6096" layer="16"/>
-<wire x1="7.62" y1="6.985" x2="1.905" y2="12.7" width="0.6096" layer="16"/>
+<wire x1="24.257" y1="6.35" x2="20.955" y2="6.35" width="0.6096" layer="16"/>
+<wire x1="20.955" y1="6.35" x2="7.62" y2="6.35" width="0.6096" layer="16"/>
+<wire x1="7.62" y1="6.35" x2="1.905" y2="12.7" width="0.6096" layer="16"/>
 </signal>
 </signals>
 </board>

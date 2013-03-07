@@ -6086,6 +6086,41 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pin name="1" x="-5.08" y="0" visible="off" length="short"/>
 <pin name="2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
 </symbol>
+<symbol name="LETTER_L">
+<wire x1="0" y1="185.42" x2="248.92" y2="185.42" width="0.4064" layer="94"/>
+<wire x1="248.92" y1="185.42" x2="248.92" y2="0" width="0.4064" layer="94"/>
+<wire x1="0" y1="185.42" x2="0" y2="0" width="0.4064" layer="94"/>
+<wire x1="0" y1="0" x2="248.92" y2="0" width="0.4064" layer="94"/>
+</symbol>
+<symbol name="DOCFIELD">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.254" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.254" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.254" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.254" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.254" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.254" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.254" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.254" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.254" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.254" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.254" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94" font="vector">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94" font="vector">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94" font="vector">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94" font="vector">REV:</text>
+<text x="1.524" y="17.78" size="2.54" layer="94" font="vector">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94" font="vector">Document Number:</text>
+<text x="15.494" y="17.78" size="2.7432" layer="94" font="vector">&gt;DRAWING_NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PTC" prefix="F">
@@ -6124,6 +6159,21 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="FRAME-LETTER" prefix="FRAME">
+<description>&lt;b&gt;Schematic Frame&lt;/b&gt;&lt;p&gt;
+Standard 8.5x11 US Letter frame</description>
+<gates>
+<gate name="G$1" symbol="LETTER_L" x="0" y="0"/>
+<gate name="G$2" symbol="DOCFIELD" x="147.32" y="0" addlevel="must"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -6147,15 +6197,16 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <part name="JP5" library="SparkFun" deviceset="M06" device="SIP"/>
 <part name="JP6" library="SparkFun" deviceset="M08" device="1X08"/>
 <part name="U$1" library="adafruit" deviceset="2.1MMJACK" device="THM"/>
-<part name="IC1" library="SparkFun" deviceset="V_REG_78XX" device="-TO-220"/>
+<part name="IC1" library="SparkFun" deviceset="V_REG_78XX" device="-TO-220" value="UA7805CKCS"/>
 <part name="D1" library="SparkFun" deviceset="DIODE" device="1N4148"/>
-<part name="IC2" library="adafruit" deviceset="MCP1700" device="INLINE"/>
-<part name="C6" library="SparkFun" deviceset="CAP_POL" device="PTH1"/>
-<part name="C1" library="SparkFun" deviceset="CAP_POL" device="PTH1"/>
+<part name="IC2" library="adafruit" deviceset="MCP1700" device="INLINE" value="MCP1702"/>
+<part name="C6" library="SparkFun" deviceset="CAP_POL" device="PTH1" value="0.33 uF"/>
+<part name="C1" library="SparkFun" deviceset="CAP_POL" device="PTH1" value="1 uF"/>
 <part name="LED1" library="adafruit" deviceset="LED" device="3MM"/>
 <part name="R1" library="adafruit" deviceset="R-US_" device="0204/2V"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="F1" library="SparkFun_mod" deviceset="PTC" device="PTH"/>
+<part name="FRAME1" library="SparkFun_mod" deviceset="FRAME-LETTER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6185,15 +6236,23 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <instance part="JP5" gate="G$1" x="124.46" y="66.04" rot="R180"/>
 <instance part="JP6" gate="G$1" x="124.46" y="43.18" rot="R180"/>
 <instance part="U$1" gate="G$1" x="22.86" y="71.12"/>
-<instance part="IC1" gate="G$1" x="60.96" y="73.66"/>
+<instance part="IC1" gate="G$1" x="60.96" y="73.66" smashed="yes">
+<attribute name="NAME" x="63.5" y="66.04" size="1.778" layer="95"/>
+<attribute name="VALUE" x="53.594" y="76.962" size="1.778" layer="96"/>
+</instance>
 <instance part="D1" gate="G$1" x="43.18" y="73.66"/>
-<instance part="IC2" gate="1" x="88.9" y="73.66"/>
+<instance part="IC2" gate="1" x="88.9" y="73.66" smashed="yes">
+<attribute name="NAME" x="91.44" y="66.04" size="1.778" layer="95"/>
+<attribute name="VALUE" x="83.566" y="76.962" size="1.778" layer="96"/>
+</instance>
 <instance part="C6" gate="G$1" x="48.26" y="68.58"/>
 <instance part="C1" gate="G$1" x="71.12" y="68.58"/>
 <instance part="LED1" gate="G$1" x="78.74" y="78.74" rot="R180"/>
 <instance part="R1" gate="G$1" x="78.74" y="88.9" rot="R270"/>
 <instance part="GND1" gate="1" x="78.74" y="96.52" rot="R180"/>
 <instance part="F1" gate="G$1" x="33.02" y="73.66"/>
+<instance part="FRAME1" gate="G$1" x="-63.5" y="-38.1"/>
+<instance part="FRAME1" gate="G$2" x="83.82" y="-38.1"/>
 </instances>
 <busses>
 </busses>
@@ -6278,7 +6337,7 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <label x="107.95" y="43.434" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D9" class="0">
+<net name="D8" class="0">
 <segment>
 <wire x1="114.3" y1="60.96" x2="119.38" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="5"/>

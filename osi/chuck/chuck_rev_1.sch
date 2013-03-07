@@ -1947,7 +1947,7 @@ Standard 8.5x11 US Letter frame</description>
 <wire x1="145.288" y1="132.08" x2="168.275" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="D9" class="0">
+<net name="D8" class="0">
 <segment>
 <wire x1="160.655" y1="86.36" x2="191.135" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="G$1" pin="5"/>
