@@ -2185,6 +2185,18 @@ Standard 8.5x11 US Letter frame</description>
 <wire x1="-1.778" y1="-2.794" x2="-0.254" y2="-2.794" width="0.127" layer="21"/>
 <wire x1="-0.254" y1="-2.794" x2="-0.254" y2="-1.016" width="0.127" layer="21"/>
 </package>
+<package name="BATT_2032">
+<pad name="P$1" x="13.716" y="0" drill="1.1"/>
+<pad name="P$2" x="-13.208" y="1.27" drill="1.1"/>
+<pad name="P$3" x="-13.208" y="-1.27" drill="1.1"/>
+<circle x="0.381" y="0" radius="11.176" width="0.127" layer="51"/>
+<wire x1="-14.478" y1="-3.175" x2="-14.478" y2="3.175" width="0.127" layer="51"/>
+<wire x1="-14.478" y1="3.175" x2="-10.16" y2="3.175" width="0.127" layer="51"/>
+<wire x1="-14.478" y1="-3.175" x2="-10.16" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="11.43" y1="3.175" x2="15.24" y2="3.175" width="0.127" layer="51"/>
+<wire x1="15.24" y1="3.175" x2="15.24" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="15.24" y1="-3.175" x2="11.43" y2="-3.175" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH">
@@ -2206,6 +2218,11 @@ Standard 8.5x11 US Letter frame</description>
 <wire x1="5.08" y1="2.54" x2="3.175" y2="3.81" width="0.254" layer="94"/>
 <wire x1="5.08" y1="2.54" x2="3.175" y2="1.27" width="0.254" layer="94"/>
 </symbol>
+<symbol name="BATT_2032">
+<pin name="P$1" x="7.62" y="0" length="middle" rot="R180"/>
+<pin name="P$2" x="-5.08" y="2.54" length="middle"/>
+<pin name="P$3" x="-5.08" y="-2.54" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SWITCH">
@@ -2223,6 +2240,23 @@ DPDT</description>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BATT_2032">
+<gates>
+<gate name="G$1" symbol="BATT_2032" x="-10.16" y="0"/>
+</gates>
+<devices>
+<device name="" package="BATT_2032">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2254,6 +2288,7 @@ DPDT</description>
 <part name="U$1" library="_my-parts" deviceset="SWITCH" device=""/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="FRAME1" library="SparkFun_mod" deviceset="FRAME-LETTER" device=""/>
+<part name="U$2" library="_my-parts" deviceset="BATT_2032" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2282,11 +2317,12 @@ DPDT</description>
 <instance part="JP8" gate="G$1" x="124.46" y="43.18" smashed="yes" rot="R180">
 <attribute name="NAME" x="134.62" y="32.258" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="BAT3" gate="G$1" x="73.66" y="78.74" rot="R180"/>
+<instance part="BAT3" gate="G$1" x="71.12" y="30.48" rot="R180"/>
 <instance part="U$1" gate="G$1" x="60.96" y="68.58"/>
 <instance part="GND1" gate="1" x="55.88" y="58.42"/>
 <instance part="FRAME1" gate="G$1" x="-22.86" y="-40.64"/>
 <instance part="FRAME1" gate="G$2" x="124.46" y="-40.64"/>
+<instance part="U$2" gate="G$1" x="76.2" y="43.18" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2304,7 +2340,15 @@ DPDT</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="5"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="60.96" y1="30.48" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="43.18" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="60.96" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="60.96" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="BAT3" gate="G$1" pin="-"/>
+<wire x1="66.04" y1="30.48" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="P$1"/>
+<wire x1="68.58" y1="43.18" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
+<junction x="60.96" y="43.18"/>
 </segment>
 </net>
 <net name="D3" class="0">
@@ -2374,8 +2418,23 @@ DPDT</description>
 </segment>
 <segment>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<wire x1="81.28" y1="78.74" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="P$2"/>
+<pinref part="U$2" gate="G$1" pin="P$3"/>
+<wire x1="81.28" y1="45.72" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
+<junction x="81.28" y="45.72"/>
+<pinref part="U$1" gate="G$1" pin="6"/>
+<wire x1="71.12" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="63.5" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
+<junction x="81.28" y="78.74"/>
+<pinref part="U$1" gate="G$1" pin="3"/>
+<wire x1="60.96" y1="78.74" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
+<junction x="71.12" y="78.74"/>
 <pinref part="BAT3" gate="G$1" pin="+"/>
-<wire x1="78.74" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="30.48" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="30.48" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
+<junction x="81.28" y="40.64"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -2388,17 +2447,6 @@ DPDT</description>
 <segment>
 <pinref part="P+2" gate="1" pin="V+"/>
 <pinref part="JP6" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<wire x1="68.58" y1="78.74" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="6"/>
-<wire x1="68.58" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="BAT3" gate="G$1" pin="-"/>
-<pinref part="U$1" gate="G$1" pin="3"/>
-<wire x1="68.58" y1="78.74" x2="60.96" y2="78.74" width="0.1524" layer="91"/>
-<junction x="68.58" y="78.74"/>
 </segment>
 </net>
 </nets>

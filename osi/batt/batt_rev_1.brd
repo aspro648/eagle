@@ -310,6 +310,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-1.778" y1="-2.794" x2="-0.254" y2="-2.794" width="0.127" layer="21"/>
 <wire x1="-0.254" y1="-2.794" x2="-0.254" y2="-1.016" width="0.127" layer="21"/>
 </package>
+<package name="BATT_2032">
+<pad name="P$1" x="13.716" y="0" drill="1.1"/>
+<pad name="P$2" x="-13.208" y="1.27" drill="1.1"/>
+<pad name="P$3" x="-13.208" y="-1.27" drill="1.1"/>
+<circle x="0.381" y="0" radius="11.176" width="0.127" layer="51"/>
+<wire x1="-14.478" y1="-3.175" x2="-14.478" y2="3.175" width="0.127" layer="51"/>
+<wire x1="-14.478" y1="3.175" x2="-10.16" y2="3.175" width="0.127" layer="51"/>
+<wire x1="-14.478" y1="-3.175" x2="-10.16" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="11.43" y1="3.175" x2="15.24" y2="3.175" width="0.127" layer="51"/>
+<wire x1="15.24" y1="3.175" x2="15.24" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="15.24" y1="-3.175" x2="11.43" y2="-3.175" width="0.127" layer="51"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -495,6 +507,7 @@ design rules under a new name.</description>
 <element name="JP8" library="SparkFun" package="1X08" value="8" x="6.35" y="24.13"/>
 <element name="BAT3" library="SparkFun_mod" package="BATTCOM_20MM_PTH" value="" x="1.905" y="12.7"/>
 <element name="U$1" library="_my-parts" package="SWITCH" value="SWITCH" x="23.495" y="3.81" rot="R90"/>
+<element name="U$2" library="_my-parts" package="BATT_2032" value="BATT_2032" x="12.142490625" y="11.176" rot="R320"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -514,10 +527,11 @@ design rules under a new name.</description>
 <contactref element="JP6" pad="2"/>
 <contactref element="U$1" pad="2"/>
 <contactref element="U$1" pad="5"/>
-<wire x1="24.257" y1="3.81" x2="20.955" y2="3.81" width="0.6096" layer="16"/>
-<wire x1="20.955" y1="3.81" x2="5.08" y2="3.81" width="0.6096" layer="16"/>
-<wire x1="5.08" y1="3.81" x2="3.81" y2="3.175" width="0.6096" layer="16"/>
-<wire x1="3.81" y1="3.175" x2="3.81" y2="1.27" width="0.6096" layer="16"/>
+<contactref element="BAT3" pad="2"/>
+<contactref element="U$2" pad="P$1"/>
+<wire x1="24.257" y1="3.81" x2="20.955" y2="3.81" width="0.6096" layer="1"/>
+<wire x1="22.649553125" y1="2.359525" x2="22.405475" y2="2.359525" width="0.6096" layer="1"/>
+<wire x1="22.405475" y1="2.359525" x2="20.955" y2="3.81" width="0.6096" layer="1"/>
 </signal>
 <signal name="SDA_D6">
 <contactref element="JP8" pad="2"/>
@@ -527,10 +541,22 @@ design rules under a new name.</description>
 </signal>
 <signal name="+3V3">
 <contactref element="JP6" pad="4"/>
+<contactref element="U$2" pad="P$2"/>
+<contactref element="U$2" pad="P$3"/>
+<contactref element="U$1" pad="6"/>
+<contactref element="U$1" pad="3"/>
 <contactref element="BAT3" pad="1"/>
-<wire x1="21.905" y1="12.7" x2="17.145" y2="12.7" width="0.6096" layer="1"/>
-<wire x1="17.145" y1="12.7" x2="8.89" y2="4.445" width="0.6096" layer="1"/>
-<wire x1="8.89" y1="4.445" x2="8.89" y2="1.27" width="0.6096" layer="1"/>
+<wire x1="1.208234375" y1="18.693059375" x2="2.840915625" y2="20.6388125" width="0.6096" layer="16"/>
+<wire x1="15.875" y1="12.7" x2="21.905" y2="12.7" width="0.6096" layer="16"/>
+<wire x1="21.905" y1="12.7" x2="21.905" y2="7.3" width="0.6096" layer="16"/>
+<wire x1="21.905" y1="7.3" x2="20.955" y2="6.35" width="0.6096" layer="16"/>
+<wire x1="20.955" y1="6.35" x2="24.257" y2="6.35" width="0.6096" layer="16"/>
+<wire x1="8.89" y1="1.27" x2="8.89" y2="1.905" width="0.6096" layer="16"/>
+<wire x1="8.89" y1="1.905" x2="10.795" y2="3.81" width="0.6096" layer="16"/>
+<wire x1="10.795" y1="3.81" x2="18.415" y2="3.81" width="0.6096" layer="16"/>
+<wire x1="18.415" y1="3.81" x2="20.955" y2="6.35" width="0.6096" layer="16"/>
+<wire x1="2.840915625" y1="20.6388125" x2="7.9361875" y2="20.6388125" width="0.6096" layer="16"/>
+<wire x1="7.9361875" y1="20.6388125" x2="15.875" y2="12.7" width="0.6096" layer="16"/>
 </signal>
 <signal name="+5V">
 <contactref element="JP6" pad="3"/>
@@ -561,14 +587,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="D7">
 <contactref element="JP8" pad="1"/>
-</signal>
-<signal name="N$1">
-<contactref element="U$1" pad="6"/>
-<contactref element="BAT3" pad="2"/>
-<contactref element="U$1" pad="3"/>
-<wire x1="24.257" y1="6.35" x2="20.955" y2="6.35" width="0.6096" layer="16"/>
-<wire x1="20.955" y1="6.35" x2="7.62" y2="6.35" width="0.6096" layer="16"/>
-<wire x1="7.62" y1="6.35" x2="1.905" y2="12.7" width="0.6096" layer="16"/>
 </signal>
 </signals>
 </board>
