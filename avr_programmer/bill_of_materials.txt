@@ -23,8 +23,8 @@ BOM for Avr_programming_shield
 3 x 330-ohm resistors (Digikey 330QBK-ND)
 1 x 10 uF cap (Digikey P975-ND)
 1 x 16-Mhz resonator (Digikey X908-ND)
-1 x straight header (Digikey A26509-40-ND)
-1 x straight header 36 pos (Digikey 609-3505-ND, $0.73)
+1 x straight header (Digikey S1011EC-40-ND, $0.67)  [0.120" tail]
+1 x straight header 36 pos (Digikey 609-3505-ND, $0.73) [0.095" tail]
 1 x tactile button (Digikey SW402-ND $0.42)
 
 Optional (for mega):
@@ -34,5 +34,6 @@ Optional (for mega):
 Optional (for optiboot):
 1 x Piezo Buzzer 
     PS1240 Adafruit 160 $1.50 
+	Digikey 445-2525-1-ND $0.73
 
 
