@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -1809,6 +1809,80 @@ Standard 8.5x11 US Letter frame</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="adafruit_mod">
+<packages>
+<package name="AVRISP">
+<wire x1="-2.54" y1="3.048" x2="-1.778" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="3.81" x2="1.778" y2="3.81" width="0.127" layer="21"/>
+<wire x1="1.778" y1="3.81" x2="2.54" y2="3.048" width="0.127" layer="21"/>
+<wire x1="2.54" y1="3.048" x2="2.54" y2="1.778" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.778" x2="2.032" y2="1.27" width="0.127" layer="21"/>
+<wire x1="2.032" y1="1.27" x2="2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0.762" x2="2.54" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-0.762" x2="2.032" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.54" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.778" x2="2.54" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-3.048" x2="1.778" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="1.778" y1="-3.81" x2="-1.778" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-3.81" x2="-2.54" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-3.048" x2="-2.54" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.778" x2="-2.032" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.032" y1="-1.27" x2="-2.54" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.762" x2="-2.032" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="-2.54" y2="1.778" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.778" x2="-2.54" y2="3.048" width="0.127" layer="21"/>
+<pad name="3" x="-1.27" y="0" drill="0.9" diameter="1.6256"/>
+<pad name="4" x="1.27" y="0" drill="0.9" diameter="1.6256"/>
+<pad name="2" x="1.27" y="2.54" drill="0.9" diameter="1.6256"/>
+<pad name="1" x="-1.27" y="2.54" drill="0.9" diameter="1.6256"/>
+<pad name="5" x="-1.27" y="-2.54" drill="0.9" diameter="1.6256"/>
+<pad name="6" x="1.27" y="-2.54" drill="0.9" diameter="1.6256"/>
+<text x="-3.048" y="-3.048" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-2.413" y="4.191" size="0.6096" layer="21" font="vector" ratio="12">1</text>
+</package>
+</packages>
+<symbols>
+<symbol name="AVRISP">
+<wire x1="-7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-2.54" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
+<pin name="MISO" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="SCK" x="-12.7" y="0" length="middle" direction="out"/>
+<pin name="RST" x="-12.7" y="-2.54" length="middle" direction="out"/>
+<pin name="GND" x="15.24" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="MOSI" x="15.24" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="VCC" x="15.24" y="2.54" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AVRISP" prefix="ISP">
+<description>&lt;b&gt;AVR ISP HEADER&lt;/b&gt;
+&lt;br&gt;
+Standard 6 pin header for AVR programming</description>
+<gates>
+<gate name="G$1" symbol="AVRISP" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="-6" package="AVRISP">
+<connects>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="MISO" pad="1"/>
+<connect gate="G$1" pin="MOSI" pad="4"/>
+<connect gate="G$1" pin="RST" pad="5"/>
+<connect gate="G$1" pin="SCK" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1830,6 +1904,9 @@ Standard 8.5x11 US Letter frame</description>
 <part name="JP8" library="SparkFun" deviceset="M08" device="1X08"/>
 <part name="FRAME1" library="SparkFun_mod" deviceset="FRAME-LETTER" device=""/>
 <part name="U$1" library="_my-parts" deviceset="NUNCHUCK" device="CHUCK"/>
+<part name="ISP1" library="adafruit_mod" deviceset="AVRISP" device="-6"/>
+<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1859,13 +1936,18 @@ Standard 8.5x11 US Letter frame</description>
 <attribute name="VALUE" x="201.295" y="101.6" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="206.375" y="85.598" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="JP8" gate="G$1" x="196.215" y="68.58" smashed="yes" rot="R180">
-<attribute name="VALUE" x="201.295" y="81.28" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="206.375" y="60.198" size="1.778" layer="95" rot="R180"/>
+<instance part="JP8" gate="G$1" x="195.58" y="68.58" smashed="yes" rot="R180">
+<attribute name="VALUE" x="200.66" y="81.28" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="205.74" y="60.198" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
 <instance part="U$1" gate="G$1" x="147.828" y="142.24" rot="R180"/>
+<instance part="ISP1" gate="G$1" x="132.08" y="104.14"/>
+<instance part="+3V1" gate="G$1" x="152.6032" y="106.68" smashed="yes" rot="R270">
+<attribute name="VALUE" x="155.1432" y="106.68" size="1.778" layer="96"/>
+</instance>
+<instance part="GND1" gate="1" x="152.6032" y="101.5746" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1884,31 +1966,29 @@ Standard 8.5x11 US Letter frame</description>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="JP6" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="ISP1" gate="G$1" pin="GND"/>
+<wire x1="147.32" y1="101.6" x2="150.0632" y2="101.5746" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="D3" class="0">
 <segment>
-<wire x1="191.135" y1="66.04" x2="183.515" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="66.04" x2="183.515" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="G$1" pin="5"/>
 <label x="187.325" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D2" class="0">
 <segment>
-<wire x1="191.135" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="G$1" pin="6"/>
 <label x="187.325" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D1" class="0">
-<segment>
-<wire x1="191.135" y1="60.96" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="JP8" gate="G$1" pin="7"/>
-<label x="187.325" y="60.96" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="AREF_D0" class="0">
 <segment>
-<wire x1="191.135" y1="58.42" x2="183.515" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="58.42" x2="183.515" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="G$1" pin="8"/>
 <label x="179.07" y="58.42" size="1.778" layer="95"/>
 </segment>
@@ -1916,7 +1996,7 @@ Standard 8.5x11 US Letter frame</description>
 <net name="SDA_D6" class="0">
 <segment>
 <wire x1="186.055" y1="134.62" x2="165.735" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="165.735" y1="73.66" x2="191.135" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="165.735" y1="73.66" x2="190.5" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="165.735" y1="134.62" x2="165.735" y2="73.66" width="0.1524" layer="91"/>
 <junction x="165.735" y="73.66"/>
 <junction x="165.735" y="134.62"/>
@@ -1925,19 +2005,27 @@ Standard 8.5x11 US Letter frame</description>
 <label x="175.895" y="134.62" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="SDA"/>
 <wire x1="145.288" y1="134.62" x2="165.735" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="73.66" x2="157.48" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="73.66" x2="157.48" y2="104.14" width="0.1524" layer="91"/>
+<junction x="190.5" y="73.66"/>
+<pinref part="ISP1" gate="G$1" pin="MOSI"/>
+<wire x1="157.48" y1="104.14" x2="147.32" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D5" class="0">
 <segment>
-<wire x1="183.515" y1="71.12" x2="191.135" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="G$1" pin="3"/>
 <label x="187.325" y="71.12" size="1.778" layer="95"/>
+<wire x1="190.5" y1="71.12" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="71.12" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="ISP1" gate="G$1" pin="MISO"/>
+<wire x1="114.3" y1="106.68" x2="119.38" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL_D4" class="0">
 <segment>
 <wire x1="186.055" y1="132.08" x2="168.275" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="168.275" y1="68.58" x2="191.135" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="168.275" y1="68.58" x2="190.5" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="168.275" y1="132.08" x2="168.275" y2="68.58" width="0.1524" layer="91"/>
 <junction x="168.275" y="132.08"/>
 <pinref part="JP8" gate="G$1" pin="4"/>
@@ -1963,7 +2051,7 @@ Standard 8.5x11 US Letter frame</description>
 </net>
 <net name="D7" class="0">
 <segment>
-<wire x1="183.515" y1="76.2" x2="191.135" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="183.515" y1="76.2" x2="190.5" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="G$1" pin="1"/>
 <label x="187.325" y="76.2" size="1.778" layer="95"/>
 </segment>
@@ -1981,6 +2069,11 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 <pinref part="JP6" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<pinref part="ISP1" gate="G$1" pin="VCC"/>
+<wire x1="147.32" y1="106.68" x2="150.0632" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="+5V" class="0">
