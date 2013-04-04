@@ -4858,6 +4858,11 @@ type 0309, grid 2.5 mm</description>
 <wire x1="88.9" y1="63.5" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P$2"/>
+<wire x1="88.9" y1="63.5" x2="99.06" y2="63.5" width="0.1524" layer="91"/>
+<junction x="88.9" y="63.5"/>
+<wire x1="99.06" y1="63.5" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="JP6" gate="G$1" pin="6"/>
+<wire x1="99.06" y1="55.88" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D3" class="0">
@@ -4958,14 +4963,6 @@ type 0309, grid 2.5 mm</description>
 <wire x1="99.06" y1="58.42" x2="99.695" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="99.695" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="58.42" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="D10" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="(PCINT8/XTAL1/CLKI)PB0"/>
-<label x="121.539" y="57.785" size="1.778" layer="95" rot="R180"/>
-<pinref part="JP6" gate="G$1" pin="6"/>
-<wire x1="88.9" y1="55.88" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D7" class="0">
