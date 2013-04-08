@@ -6213,6 +6213,13 @@ Dave Orth</text>
 <wire x1="154.94" y1="129.54" x2="154.94" y2="119.38" width="0.1524" layer="91"/>
 <junction x="154.94" y="119.38"/>
 <pinref part="U$4" gate="G$1" pin="P$4"/>
+<wire x1="149.86" y1="88.9" x2="154.94" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="16MHZ" gate="G$1" pin="3"/>
+<pinref part="U$4" gate="G$1" pin="P$10"/>
+<wire x1="154.94" y1="88.9" x2="170.18" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="104.14" x2="154.94" y2="88.9" width="0.1524" layer="91"/>
+<junction x="154.94" y="104.14"/>
+<junction x="154.94" y="88.9"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -6303,13 +6310,6 @@ Dave Orth</text>
 <wire x1="149.86" y1="93.98" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="16MHZ" gate="G$1" pin="1"/>
 <pinref part="U$4" gate="G$1" pin="P$9"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<wire x1="149.86" y1="88.9" x2="170.18" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="16MHZ" gate="G$1" pin="3"/>
-<pinref part="U$4" gate="G$1" pin="P$10"/>
 </segment>
 </net>
 <net name="N$26" class="0">
