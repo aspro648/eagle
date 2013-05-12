@@ -8700,6 +8700,7 @@ USART&lt;p&gt;
 <part name="JP2" library="SparkFun_mod" deviceset="M04" device="PTH"/>
 <part name="JP12" library="SparkFun_mod" deviceset="M02" device="PTH"/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
+<part name="JP7" library="SparkFun_mod" deviceset="M02" device="PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -8763,7 +8764,7 @@ USART&lt;p&gt;
 <instance part="R2" gate="G$1" x="-38.1" y="71.12" rot="R90"/>
 <instance part="C1" gate="G$1" x="-38.1" y="86.36"/>
 <instance part="C2" gate="G$1" x="-38.1" y="58.42"/>
-<instance part="S1" gate="S" x="-48.26" y="76.2"/>
+<instance part="S1" gate="S" x="-48.26" y="76.2" rot="MR0"/>
 <instance part="LED1" gate="G$1" x="53.34" y="5.08" rot="R270"/>
 <instance part="R4" gate="G$1" x="43.18" y="5.08" rot="R180"/>
 <instance part="GND6" gate="1" x="35.56" y="5.08" rot="R270"/>
@@ -8776,6 +8777,7 @@ USART&lt;p&gt;
 <instance part="JP2" gate="G$1" x="2.54" y="127" rot="MR0"/>
 <instance part="JP12" gate="G$1" x="5.08" y="139.7" rot="R180"/>
 <instance part="GND7" gate="1" x="-20.32" y="66.04" rot="R270"/>
+<instance part="JP7" gate="G$1" x="55.88" y="109.22" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -8824,14 +8826,6 @@ USART&lt;p&gt;
 <pinref part="IC2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="-55.88" y1="76.2" x2="-53.34" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="S1" gate="S" pin="1"/>
-<pinref part="S1" gate="S" pin="2"/>
-<wire x1="-53.34" y1="76.2" x2="-53.34" y2="73.66" width="0.1524" layer="91"/>
-<junction x="-53.34" y="76.2"/>
-</segment>
-<segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
@@ -8839,6 +8833,15 @@ USART&lt;p&gt;
 <pinref part="IC2" gate="G$1" pin="AGND"/>
 <wire x1="-10.16" y1="66.04" x2="-17.78" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="-55.88" y1="76.2" x2="-55.88" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="S1" gate="S" pin="4"/>
+<wire x1="-55.88" y1="73.66" x2="-53.34" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="S1" gate="S" pin="3"/>
+<wire x1="-55.88" y1="76.2" x2="-53.34" y2="76.2" width="0.1524" layer="91"/>
+<junction x="-55.88" y="76.2"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -8848,17 +8851,12 @@ USART&lt;p&gt;
 <junction x="127" y="48.26"/>
 <wire x1="99.06" y1="76.2" x2="-30.48" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="76.2" x2="-38.1" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="76.2" x2="-43.18" y2="76.2" width="0.1524" layer="91"/>
 <junction x="-38.1" y="81.28"/>
 <wire x1="-10.16" y1="71.12" x2="-30.48" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="71.12" x2="-30.48" y2="76.2" width="0.1524" layer="91"/>
 <junction x="-30.48" y="76.2"/>
-<wire x1="-43.18" y1="73.66" x2="-43.18" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="S1" gate="S" pin="3"/>
-<junction x="-43.18" y="76.2"/>
-<pinref part="S1" gate="S" pin="4"/>
 <wire x1="99.06" y1="76.2" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
 <label x="119.38" y="109.22" size="1.778" layer="95"/>
 <pinref part="JP11" gate="G$1" pin="6"/>
@@ -8869,6 +8867,14 @@ USART&lt;p&gt;
 <junction x="99.06" y="76.2"/>
 <wire x1="-38.1" y1="81.28" x2="-38.1" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="PC6(/RESET/PCI14)"/>
+<wire x1="-40.64" y1="73.66" x2="-40.64" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="76.2" x2="-38.1" y2="76.2" width="0.1524" layer="91"/>
+<junction x="-38.1" y="76.2"/>
+<pinref part="S1" gate="S" pin="2"/>
+<wire x1="-40.64" y1="73.66" x2="-43.18" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="S1" gate="S" pin="1"/>
+<wire x1="-43.18" y1="76.2" x2="-40.64" y2="76.2" width="0.1524" layer="91"/>
+<junction x="-40.64" y="76.2"/>
 </segment>
 </net>
 <net name="V+" class="0">
@@ -9034,6 +9040,11 @@ USART&lt;p&gt;
 <wire x1="48.26" y1="119.38" x2="43.18" y2="119.38" width="0.1524" layer="91"/>
 <label x="43.18" y="119.38" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP7" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="109.22" x2="43.18" y2="109.22" width="0.1524" layer="91"/>
+<label x="43.18" y="109.22" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SCL_A5" class="0">
 <segment>
@@ -9057,6 +9068,11 @@ USART&lt;p&gt;
 <pinref part="JP9" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="116.84" x2="43.18" y2="116.84" width="0.1524" layer="91"/>
 <label x="43.18" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP7" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="106.68" x2="43.18" y2="106.68" width="0.1524" layer="91"/>
+<label x="43.18" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D11" class="0">
