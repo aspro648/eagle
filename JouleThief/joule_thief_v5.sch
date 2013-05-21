@@ -2342,6 +2342,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="58.42" y1="121.92" x2="50.8" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="121.92" x2="22.86" y2="121.92" width="0.1524" layer="91"/>
 <junction x="50.8" y="121.92"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="132.08" x2="22.86" y2="137.16" width="0.1524" layer="91"/>
+<junction x="22.86" y="132.08"/>
 </segment>
 </net>
 <net name="N$4" class="0">
